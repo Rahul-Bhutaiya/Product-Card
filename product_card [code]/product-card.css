@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #F2EBE3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+#container{
+    width: 700px;
+    height: 420px;
+    margin: 1rem 2rem;
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 1.5rem;
+}
+
+#coffee_mug_img_for_pc{
+    border-radius: 1.5rem 0px 0px 1.5rem;
+}
+#coffee_mug_img_for_mobile{
+    display: none;
+}
+
+#text{
+    margin: 1.5rem 2rem;
+}
+
+#heading{
+    font-family: Montserrat,sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color:#6C7289;
+    letter-spacing: 4.8px;
+}
+
+#heading2{
+    margin-top: 19px;
+    margin-bottom: 22px;
+    font-family: Fraunces, 'serif';
+    width: 70%;
+    line-height: 2rem;
+}
+
+#description{
+    font-family: Montserrat,sans-serif;
+    font-size: 1rem;
+    color: #6C7289;
+    width: 95%;
+    margin-bottom: 1.5rem;
+}
+
+#money{
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #3c8067;
+    margin-top: 19px;
+    margin-bottom: 22px;
+}
+
+#money>span{
+    font-family: Montserrat,sans-serif;
+    font-size: 1rem;
+    line-height: 13.3px;
+    color: #6c7289;
+    margin-left: 7px;
+    text-decoration: line-through;
+}
+
+#button{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 26px;
+    margin-bottom: 13px;
+    padding: 13px 0px;
+    background-color:#3c8067;
+    border-radius: 9.33px;
+}
+
+#button>p{
+    color: white;
+    font-family: Montserrat,sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#button:hover{
+    background-color: #2F4C40;
+    transition: 0.2s;
+}
+
+@media (min-width:260px) and (max-width:650px){
+    #container{
+        flex-direction: column;
+        max-width: 400px;
+        min-width: 200px;
+        /* min-height:750px; */
+        min-height: 770px;
+        
+    }
+    #coffee_mug_img_for_pc{
+        display: none;
+    }
+    #coffee_mug_img_for_mobile{
+        display: block;
+        border-radius: 1em 1em 0px 0px;
+    }
+    #text{
+        background-color: white;
+        margin: 0px 0px;
+        padding: 1.5em 2em;
+        border-radius: 1.5rem;
+    }
+    #heading{
+        margin-top: 0.3rem;
+    }
+    #heading2{
+        width: 100%;
+        margin-top: 1.7rem;
+    }
+    #description{
+        width: 100%;
+    }
+    #button{
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width:259px){
+    #container{
+        flex-direction: column;
+        max-width: 259px;
+        min-width: 104px;
+        /* min-height:750px; */
+        min-height: 580px;
+    }
+    
+    #coffee_mug_img_for_pc{
+        display: none;
+    }
+    #coffee_mug_img_for_mobile{
+        display: block;
+        border-radius: 1em 1em 0px 0px;
+    }
+    #text{
+        background-color: white;
+        margin: 0px 0px;
+        padding: 24px 9.6px;
+        border-radius: 1.5rem;
+    }
+    #heading{
+        font-size: 14.4px;
+        margin-top: 0.3rem;
+    }
+    #heading2{
+        line-height: 20px;
+        font-size: 20.8px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    #description{
+        width: 100%;
+        font-size: 14.4px;
+        margin-bottom: 0px;
+    }
+    #button{
+        margin-bottom: 0px;
+    }
+    #money{
+        font-size: 20.8px;
+    }
+    #money>span{
+        font-size: 14.4px;
+    }
+    #button>p{
+        font-size: 14.4px;
+    }
+}
